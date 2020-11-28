@@ -265,6 +265,11 @@ body #in{
         height: 200px;
     }
     
+    body #j{
+        width: 400px;
+        height: 300px;
+    }
+    
      body #intro {
     width: 90%;
 }
