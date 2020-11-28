@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Timer NE555</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../ckto/cks/serie.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    </head>
+<body>
+   <header>
+   <input type="checkbox" id="btn-menu">
+   <label for="btn-menu"><img src="../../IMAG/PROB1.png" width="23" height="23"></label>
+   <img id="logo" src="../../IMAG/Sin%20nombre.png" width="155" height="35">
+    <nav class="menu">
+       <ul>
+        <li id="item"><a href="../../index.html">Inicio</a></li>
+           <li id="item" class="submenu"><a href="#">Componentes <img src="../../IMAG/descarga1.png" width="20" height="20"></a>
+              <ul id="desple">
+                <li><a href="../../paginas/componentes/pasivos.html">Componentes pasivos</a></li>
+                <li><a href="../../paginas/componentes/semiconductores.html">Semiconductores</a></li>
+                <li><a href="../../paginas/componentes/puertas%20logicas.html">Puertas lógicas</a></li>
+              </ul>
+           </li>
+           <li id="item"><a href="../../paginas/circuitos.html">Circuitos</a></li>
+           <li id="item"><a href="../../paginas/microcontroladores.html">Microcontroladores</a></li>
+           <li id="item"><a href="../../paginas/contacto.html">Contacto</a></li>
+           <a id="ima"><img src="../../IMAG/Sin%20nombre.png" width="158" height="34"></a>
+       </ul>     
+   </nav>
+   </header>
+       <script src="../../menu.js"></script>
+       <section id="com">
+     <div>
+      <h1>¿Qué es un Timer NE555?</h1>
+      </div>
+      <section id="pa">
+       <section id="intro">
+          <article>
+             <p>El circuito integrado 555 es uno de los integrados mas utilizados en el mundo de la electrónica por su bajo costo y su gran fiabilidad. Es capaz de producir pulsos de temporización (modo monoestable) muy precisos y que también puede ser usado como oscilador (modoastable).</p>
+             <p>Consta internamente de 23 transistores, 2 diodos y 12 resistencias. Opera con tensiones de alimentación desde 4.5 V hasta 18 V y puede manejar corrientes de salida hasta de 200 mA, una capacidad suficiente para impulsar directamente entradas TTL, LED, zumbadores, bobinas de rele, parlantes piezoeléctricos y otros componentes. Asociado con unos pocos componentes externos (resistencias y condensadores, principalmente) el 555 se puede utilizar para generar trenes de pulsos, temporizar eventos y otras aplicaciones, tanto análogas como digitales. </p>
+         </article>
+     </section>
+        <section id="in">
+        <section>
+         <aside id="indicad">
+          <h4>Indíce</h4>
+          <a href="#cap1">• Descripción de las conexiones</a><br>
+          <a href="#cap2">• Especificaciones</a><br>
+          <a href="#cap3">• Modos de operación</a><br>
+          <a href="#cap4">• Referencias</a><br>
+        </aside>
+        </section>
+        </section>
+        <section id="ks"><img id="kc" src="../../IMAG/555.png" width="500px" height="280px"></section>
+        <section id="cap1">
+        <hr color="red" size=2>
+            <a name="cap1"></a>
+            <h2>Descripción de las conexiones</h2>
+            <p>> GND (normalmente la 1): es el polo negativo de la alimentación, generalmente tierra (masa).</p>
+            <p>> Disparo (normalmente la 2): Es donde se establece el inicio del tiempo de retardo si el 555 es configurado como monoestable. Este proceso de disparo ocurre cuando esta patilla tiene menos de 1/3 del voltaje de alimentación. Este pulso debe ser de corta duración, pues si se mantiene bajo por mucho tiempo la salida se quedará en alto hasta que la entrada de disparo pase a alto otra vez.</p>
+            <p>> Salida (normalmente la 3): Aquí veremos el resultado de la operación del temporizador, ya sea que esté conectado como monoestable, estable u otro. Cuando la salida es alta, el voltaje será el voltaje de alimentación (Vcc) menos 1.7 V. Esta salida se puede obligar a estar en casi 0 voltios con la ayuda de la patilla de reinicio (normalmente la 4).</p>
+            <p>> Reinicio (normalmente la 4): Si se pone a un nivel por debajo de 0.7 Voltios, pone la patilla de salida a nivel bajo. Si por algún motivo esta patilla no se utiliza hay que conectarla a alimentación para evitar que el temporizador se reinicie.</p>
+            <p>> Control de voltaje (normalmente la 5): Cuando el temporizador se utiliza en el modo de controlador de voltaje, el voltaje en esta patilla puede variar casi desde Vcc (en la práctica como Vcc -1.7 V) hasta casi 0 V (aprox. 2 V menos). Así es posible modificar los tiempos. Puede también configurarse para, por ejemplo, generar pulsos en rampa.</p>
+            <p>> Umbral (normalmente la 6): Es una entrada a un comparador interno que se utiliza para poner la salida a nivel bajo.</p>
+            <p>> Descarga (normalmente la 7): Utilizado para descargar con efectividad el condensador externo utilizado por el temporizador para su funcionamiento.</p>
+            <p>> Voltaje de alimentación (VCC) (normalmente la 8): es el terminal donde se conecta el voltaje de alimentación que va de 4.5 V hasta 16 V.</p>
+           <hr color="red" size=2>
+            <a name="cap2"></a>
+             <h2>Especificaciones</h2>
+             <p>> Tensión de operación: 4.5 V a 18 V</p>
+             <p>> Frecuencia máxima: 500 Khz a 2 Mhz</p>
+             <p>> Corriente de salida máxima: 200 mA</p>
+             <p>> Reloj temporizador</p>
+             <p>> Modo de funcionamiento: Estable, monoestable</p>
+             <p>> Número de temporizadores: 1</p>
+             <p>> Rango de temperatura de operación: 0° C a 70° C</p>
+             <p>> Encapsulado: DIP</p>
+             <p>> Número de pines: 8</p>
+              <hr color="red" size=2>
+              <a name="cap3"></a>
+              <h2>Modos de operación</h2>
+              <p>En el modo astable , el circuito entrega un tren continuo de pulso y en el monoestable suministra un pulso de determinada duración. La frecuencia y el ancho del pulso se programan externamente mediante resistencias y condensadores adecuados. Otro modo de operación importante es como modulador de ancho de pulsos. En este caso, el chip trabaja en el modo monoestable pero la duración del pulso se controla mediante un voltaje externo aplicado al pin 5.</p>
+              <hr color="red" size=2>
+              <a name="cap4"></a>
+              <h2>Referencias</h2>
+              <p><a href="https://electrocrea.com/products/temporizador-ne555">• electrocrea</a></p>
+              <p><a href="https://es.wikipedia.org/wiki/Circuito_integrado_555">• Circuito integrado 555</a></p>
+        </section>
+      <section class="container">
+      <footer class="row">
+         <section class="sozial">
+           <ul class="row">
+            <li class="col">
+              <a href="https://m.facebook.com/Melgar_MC-1957625434449877/?ref=bookmarks">
+                 <img class="loga" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://twitter.com/DennisDjezer">
+                <img class="loga" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png">
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://www.instagram.com/jezer__11/">
+                <img class="loga" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://www.youtube.com/channel/UCt59jVZXhrQS4KbmSTuhBJg">
+            <img class="loga" src="../../IMAG/youtube.png">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="impressum">
+          <p> Sugerencias al correo </p>
+          <a id="correo" href="mailto:djezer.melgar@gmail.com?Subject=Sugerencias%20sobre%20la%20pagina%20web.">djezer.melgar@gmail.com </a>
+        </section>
+  </footer>
+</section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Circuito Mixto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../ckto/cks/serie.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    </head>
+<body>
+   <header>
+   <input type="checkbox" id="btn-menu">
+   <label for="btn-menu"><img src="../../IMAG/PROB1.png" width="23" height="23"></label>
+   <img id="logo" src="../../IMAG/Sin%20nombre.png" width="155" height="35">
+    <nav class="menu">
+       <ul>
+        <li id="item"><a href="../../index.html">Inicio</a></li>
+           <li id="item" class="submenu"><a href="#">Componentes <img src="../../IMAG/descarga1.png" width="20" height="20"></a>
+              <ul id="desple">
+                <li><a href="../../paginas/componentes/pasivos.html">Componentes pasivos</a></li>
+                <li><a href="../../paginas/componentes/semiconductores.html">Semiconductores</a></li>
+                <li><a href="../../paginas/componentes/puertas%20logicas.html">Puertas lógicas</a></li>
+              </ul>
+           </li>
+           <li id="item"><a href="../../paginas/circuitos.html">Circuitos</a></li>
+           <li id="item"><a href="../../paginas/microcontroladores.html">Microcontroladores</a></li>
+           <li id="item"><a href="../../paginas/contacto.html">Contacto</a></li>
+           <a id="ima"><img src="../../IMAG/Sin%20nombre.png" width="158" height="34"></a>
+       </ul>     
+   </nav>
+   </header>
+       <script src="../../menu.js"></script>
+       <section id="com">
+     <div>
+      <h1>¿Qué es un circuito mixto?</h1>
+      </div>
+      <section id="pa">
+       <section id="intro">
+          <article>
+            <p>Existen dos formas básicas de conectar componentes eléctricos en un circuito: se pueden conectar mediante conexiones en serie o mediante conexiones en paralelo.</p>
+            
+            <p>Una tercer forma de circuito electrico es si los elementos del circuito están conectados en serie y otros en paralelo, sería un circuito eléctrico mixto. En otras palabras, este es una combinación de circuitos en serie y en paralelo.</p>
+         </article>
+     </section>
+        <section id="in">
+        <section>
+         <aside id="indicad">
+          <h4>Indíce</h4>
+          <a href="#cap1">• Funcionamiento</a><br>
+          <a href="#cap2">• Características</a><br>
+          <a href="#cap3">• Ventajas y desventajas</a><br>
+          <a href="#cap4">• Referencias</a><br>
+        </aside>
+        </section>
+        </section>
+        <section id="ks"><img id="kc" src="../../IMAG/ckmix.gif" width="500px" height="320px"></section>
+        <section id="cap1">
+        <hr color="red" size=2>
+            <a name="cap1"></a>
+            <h2>Funcionamiento</h2>
+            <p>En general, los circuitos mixtos tienen una fuente de alimentación conectada en serie con un interruptor que energiza todo el sistema por igual.</p>
+            <p>Después de este alimentador, generalmente hay varios circuitos secundarios cuya configuración varía de acuerdo con la estructuración de los receptores: circuitos en serie y paralelo sin un patrón específico.</p>
+            <section id="re"><img src="../../IMAG/funm.png" width="450" height="300"></section>
+            <p>En este circuito la corriente sale de la parte inferior de la batería y se divide para viajar a través de R4 y R5, vuelve a unirse, luego se divide nuevamente para viajar a través de R2 y R3, vuelve a unirse para viajar a través de R1 y finalmente vuelve a la parte superior de la batería.</p>
+            <p>Entonces, existe más de una ruta para que la corriente viaje (circuito en paralelo), pero hay más de dos conjuntos de puntos eléctricamente comunes en el circuito (circuito en serie).</p>
+            <h4>> Para las conexiones en serie, todos los circuitos vecinos se eliminarán automáticamente de la unidad cuando desconecte parte de este bucle o red. Si desconectan la resistencia R1, automáticamente las demás resistencias dejarán de funcionar.</h4>
+            <h4>> Por otro lado, en el caso de circuitos secundarios paralelos, si uno de los componentes se funde y se genera un punto abierto, la otra rama continuará operando independientemente.</h4>
+            <h4>> Si se desconecta una de las resistencias en paralelo (R2, R3, R4 o R5), las ramas vecinas continuarán funcionando.</h4>
+           <hr color="red" size=2>
+            <a name="cap2"></a>
+             <h2>Características</h2>
+             <p>> Se caracteriza por estar compuesta por la combinación de circuitos en serie y paralelo.</p>
+             <p>> El voltaje varia dependiendo de la caida de tensión entre cada nodo.</p>
+             <p>> La intensidad de la corriente varía dependiendo de la conexión. </p>
+             <p>> Existen dos formulas para calcular la resistencia total del circuito mixto, la formula de la resistencia en circuitos en serie y en paralelo.</p>
+              <hr color="red" size=2>
+              <a name="cap3"></a>
+              <h2>Ventajas y desventajas</h2>
+              <p>Los circuitos mixtos los encontramos en casa, En el momento que conectas dos aparatos en un tomacorriente se tiene un circuito en paralelo. Si se conecta solo un aparato se considera en serie. El circuito electrico de la casa es versatil y se considera en paralelo y mixto.</p>
+              <h4>Ventajas</h4>
+              <p>> Conexión sencilla.</p>
+              <p>> Menos cables.</p>
+              <h4>Desventajas</h4>
+              <p>> Ofrece mayor resistencia y por lo  mismo la intensidad de ella disminuye.</p>
+              <hr color="red" size=2>
+              <a name="cap4"></a>
+              <h2>Referencias</h2>
+              <p><a href="https://electronicaonline.net/circuito-electrico/circuito-mixto/#:~:text=Se%20caracteriza%20por%20estar%20compuesta,resistencia%20total%20del%20circuito%20mixto.">• Circuito mixto definición</a></p>
+              <p><a href="https://mielectronicafacil.com/analisis-de-circuitos/circuito-mixto/#resistencia-total-o-equivalente">• Funcionamiento de un circuito mixto</a></p>
+        </section>
+      <section class="container">
+      <footer class="row">
+         <section class="sozial">
+           <ul class="row">
+            <li class="col">
+              <a href="https://m.facebook.com/Melgar_MC-1957625434449877/?ref=bookmarks">
+                 <img class="loga" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://twitter.com/DennisDjezer">
+                <img class="loga" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png">
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://www.instagram.com/jezer__11/">
+                <img class="loga" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://www.youtube.com/channel/UCt59jVZXhrQS4KbmSTuhBJg">
+            <img class="loga" src="../../IMAG/youtube.png">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="impressum">
+          <p> Sugerencias al correo </p>
+          <a id="correo" href="mailto:djezer.melgar@gmail.com?Subject=Sugerencias%20sobre%20la%20pagina%20web.">djezer.melgar@gmail.com </a>
+        </section>
+  </footer>
+</section>
+    </section>
+</body>
+</html>

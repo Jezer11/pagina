@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Puertas lógicas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="cs/pa.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    </head>
+<body>
+   <header>
+   <input type="checkbox" id="btn-menu">
+   <label for="btn-menu"><img src="../../IMAG/PROB1.png" width="23" height="23"></label>
+   <img id="logo" src="../../IMAG/Sin%20nombre.png" width="155" height="35">
+    <nav class="menu">
+       <ul>
+        <li id="item"><a href="../../index.html">Inicio</a></li>
+           <li id="item" class="submenu"><a href="#">Componentes <img src="../../IMAG/descarga1.png" width="20" height="20"></a>
+              <ul id="desple">
+                <li><a href="pasivos.html">Componentes pasivos</a></li>
+                <li><a href="semiconductores.html">Semiconductores</a></li>
+                <li><a href="puertas%20logicas.html">Puertas lógicas</a></li>
+              </ul>
+           </li>
+           <li id="item"><a href="../../paginas/circuitos.html">Circuitos</a></li>
+           <li id="item"><a href="../../paginas/microcontroladores.html">Microcontroladores</a></li>
+           <li id="item"><a href="../../paginas/contacto.html">Contacto</a></li>
+           <a id="ima"><img src="../../IMAG/Sin%20nombre.png" width="158" height="34"></a>
+       </ul>     
+   </nav>
+   </header>
+       <script src="../../menu.js"></script>
+       <section id="com">
+     <div>
+      <h1>¿Qué es una compuerta lógica?</h1>
+      </div>
+      <section id="pa">
+       <section id="intro">
+          <article>
+            <p>Una puerta lógica, o compuerta lógica, es un dispositivo electrónico con una función booleana u otras funciones como sumar o restar, incluyen o excluyen según sus propiedades lógicas. Se pueden aplicar a tecnología electrónica, eléctrica, mecánica, hidráulica y neumática. Son circuitos de conmutación integrados en un chip. Experimentada con relés o interruptores electromagnéticos para conseguir las condiciones de cada compuerta lógica, por ejemplo, para la función booleana Y (AND) colocaba interruptores en circuito serie, ya que con uno solo de estos que tuviera la condición «abierto», la salida de la compuerta Y sería = 0, mientras que para la implementación de una compuerta O (OR), la conexión de los interruptores tiene una configuración en circuito paralelo.</p>
+            <p>Existen diferentes tipos de compuertas y algunas de estas son más complejas, con la posibilidad de ser simuladas por compuertas más sencillas. Todas estas tienen tablas de verdad que explican los comportamientos en los resultados que otorga, dependiendo del valor booleano que tenga en cada una de sus entradas.</p>
+            <p>Trabajan en dos estado, "1" o "0", los cuales pueden asignarse a la lógica positiva o lógica negativa. El estado 1 tiene un valor de 5v como máximo y el estado 0 tiene un valor de 0v como mínimo y existiendo un umbral entre estos dos estados donde el resultado puede variar sin saber con exactitud la salida que nos entregara.</p>
+         </article>
+     </section>
+        <section id="in">
+        <section>
+         <aside id="indicad">
+          <h4>Indíce</h4>
+          <a href="#cap1">• Compuerta AND</a><br>
+          <a href="#cap2">• Compuerta OR</a><br>
+          <a href="#cap3">• Compuerta NOT</a><br>
+          <a href="#cap4">• Compuerta NAND</a><br>
+          <a href="#cap5">• Compuerta NOR</a><br>
+          <a href="#cap6">• Compuerta XOR</a><br>
+          <a href="#cap7">• Compuerta XNOR</a><br>
+          <a href="#cap8">• Compuerta IF</a><br>
+          <a href="#cap9">• Referencias</a><br>
+        </aside>
+        </section>
+        </section>
+        <section id="ks"><img id="kc" src="../../IMAG/com.png" width="350px" height="200px"></section>
+        <section id="cap1">
+        <hr color="red" size=2>
+            <a name="cap1"></a>
+            <h2>Compuerta AND</h2>
+            <p>Esta compuerta es representada por una multiplicación en el Algebra de Boole. Indica que es necesario que en todas sus entradas se tenga un estado binario 1 para que la salida otorgue un 1 binario. En caso contrario de que falte alguna de sus entradas con este estado o no tenga si quiera una accionada, la salida no podrá cambiar de estado y permanecerá en 0. Esta puede ser simbolizada por dos o más interruptores en serie de los cuales todos deben estar activos para que esta permita el flujo de la corriente.</p>
+            <section id="vo"><img id="j" src="../../IMAG/AND.jpg" width="500" height="200"></section>
+           <hr color="red" size=2>
+            <a name="cap2"></a>
+             <h2>Compuerta OR</h2>
+               <p>En el Algebra de Boole esta es una suma. Esta compuerta permite que con cualquiera de sus entradas que este en estado binario 1, su salida pasara a un estado 1 también. No es necesario que todas sus entradas estén accionadas para conseguir un estado 1 a la salida pero tampoco causa algún inconveniente. Para lograr un estado 0 a la salida, todas sus entradas deben estar en el mismo valor de 0. Se puede interpretar como dos interruptores en paralelo, que sin importar cual se accione, será posible el paso de la corriente.</p>
+               <section id="vo"><img id="j" src="../../IMAG/OR.jpg" width="500" height="200"></section>
+               <hr color="red" size=2>
+              <a name="cap3"></a>
+              <h2>Compuerta NOT</h2>
+              <p>En este caso esta compuerta solo tiene una entrada y una salida y esta actúa como un inversor. Para esta situación en la entrada se colocara un 1 y en la salida otorgara un 0 y en el caso contrario esta recibirá un 0 y mostrara un 1. Por lo cual todo lo que llegue a su entrada, será inverso en su salida.</p>
+              <section id="vo"><img id="j" src="../../IMAG/NOT.jpg" width="500" height="200"></section>
+               <hr color="red" size=2>
+              <a name="cap4"></a>
+              <h2>Compuerta NAND</h2>
+              <p>También denominada como AND negada, esta compuerta trabaja al contrario de una AND ya que al no tener entradas en 1 o solamente alguna de ellas, esta concede un 1 en su salida, pero si esta tiene todas sus entradas en 1 la salida se presenta con un 0.</p>
+              <section id="vo"><img id="j" src="../../IMAG/NAND.jpg" width="500" height="200"></section>
+               <hr color="red" size=2>
+              <a name="cap5"></a>
+              <h2>Compuerta NOR</h2>
+              <p>Así como vimos anteriormente, la compuerta OR también tiene su versión inversa. Esta compuerta cuando tiene sus entradas en estado 0 su salida estará en 1, pero si alguna de sus entradas pasa a un estado 1 sin importar en qué posición, su salida será un estado 0.</p>
+              <section id="vo"><img id="j" src="../../IMAG/NOR.jpg" width="500" height="200"></section>
+               <hr color="red" size=2>
+              <a name="cap6"></a>
+              <h2>Compuerta XOR</h2>
+              <p>También llamada OR exclusiva, esta actúa como una suma binaria de un digito cada uno y el resultado de la suma seria la salida. Otra manera de verlo es que con valores de entrada igual el estado de salida es 0 y con valores de entrada diferente, la salida será 1.</p>
+              <section id="vo"><img id="j" src="../../IMAG/XOR.jpg" width="500" height="200"></section>
+              <hr color="red" size=2>
+              <a name="cap7"></a>
+              <h2>Compuerta XNOR</h2>
+              <p>Esta es todo lo contrario a la compuerta XOR, ya que cuando las entradas sean iguales se presentara una salida en estado 1 y si son diferentes la salida será un estado 0.</p>
+              <section id="vo"><img id="j" src="../../IMAG/XNOR.jpg" width="500" height="200"></section>
+              <hr color="red" size=2>
+              <a name="cap8"></a>
+              <h2>Compuerta IF</h2>
+              <p>Esta compuerta no es una muy utilizada o reconocida ya que su funcionamiento en estados lógicos es parecido a si solo hubiera un cable conectado porque exactamente lo que se le coloque en la entrada, se encontrara en la salida. Pero también es conocido como un buffer, en la práctica se utiliza como amplificador de corriente o como seguidor de tensión para adaptar impedancias.</p>
+              <section id="vo"><img id="j" src="../../IMAG/IF.jpg" width="500" height="200"></section>
+              <hr color="red" size=2>
+              <a name="cap9"></a>
+              <h2>Referencias</h2>
+              <p><a href="https://www.logicbus.com.mx/compuertas-logicas.php">• Compuertas lógicas</a></p>
+              <p><a href="https://es.wikipedia.org/wiki/Puerta_l%C3%B3gica">• ¿Qué es una compuerta lógica?</a></p>
+        </section>
+      <section class="container">
+      <footer class="row">
+         <section class="sozial">
+           <ul class="row">
+            <li class="col">
+              <a href="https://m.facebook.com/Melgar_MC-1957625434449877/?ref=bookmarks">
+                 <img class="loga" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://twitter.com/DennisDjezer">
+                <img class="loga" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png">
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://www.instagram.com/jezer__11/">
+                <img class="loga" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://www.youtube.com/channel/UCt59jVZXhrQS4KbmSTuhBJg">
+            <img class="loga" src="../../IMAG/youtube.png">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="impressum">
+          <p> Sugerencias al correo </p>
+          <a id="correo" href="mailto:djezer.melgar@gmail.com?Subject=Sugerencias%20sobre%20la%20pagina%20web.">djezer.melgar@gmail.com </a>
+        </section>
+  </footer>
+</section>
+    </section>
+</body>
+</html>
